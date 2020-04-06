@@ -6,7 +6,7 @@ const hostname = window && window.location
 const port = window && window.location &&
 	window.location.port;
 
-	 
+/*	 
 if(hostname.includes('localhost')){
 	apiHost = 'http://localhost:8080';
 }else if(hostname.includes('dev')){
@@ -17,8 +17,8 @@ if(hostname.includes('localhost')){
 	(hostname === 'https://api.example.com')){
 		apiHost = 'https://localhost:9000'
 	}
+*/
 
-/*
 if(port.includes(9500)){
 	// local profile
 	apiHost = 'http://localhost:8080';
@@ -32,5 +32,5 @@ if(port.includes(9500)){
 	// prod profile
 	apiHost ='http://localhost:8095';
 }
-*/
+
 export const API_ROOT = `${apiHost}`;
