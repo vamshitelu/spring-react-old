@@ -1,6 +1,6 @@
 spring:
   Profiles:
-    active: qa
+    active: prod
 ---
 spring:
   profiles: local

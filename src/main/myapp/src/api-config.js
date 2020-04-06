@@ -20,16 +20,12 @@ if(hostname.includes('localhost')){
 */
 
 if(port.includes(9500)){
-	// local profile
 	apiHost = 'http://localhost:8080';
 }else if(port.includes(9600)){
-	// dev profile
 	apiHost = 'http://localhost:8085';
 }else if(port.includes(9700)){
-	// qa profile
 	apiHost = 'http://localhost:8090';
 }else if(port.includes(9800)){
-	// prod profile
 	apiHost ='http://localhost:8095';
 }
 
