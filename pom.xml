@@ -69,11 +69,6 @@
 							<goal>install-node-and-npm</goal>
 						</goals>
 						<phase>generate-resources</phase>
-					<!--  	<configuration>
-							<workingDirectory>src/main/myapp/</workingDirectory>
-							<nodeVersion>v12.6.0</nodeVersion>
-							<npmVersion>6.9.0</npmVersion>
-						</configuration> -->
 					</execution>
 					<execution>
 						<id>npm-install</id>
@@ -109,7 +104,7 @@
 						</goals>
 						<phase>process-resources</phase>
 						<configuration>
-							<outputDirectory>target/classes/static</outputDirectory>
+							<outputDirectory>${basedir}/target/classes/static</outputDirectory>
 							<resources>
 								<resource>
 									<directory>src/main/myapp/build</directory>
